@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="http://localhost:8080/group5/css/jquery-ui.min.css">
+    <script src="http://localhost:8080/group5/js/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/f3a13d5fed.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+
+    <style>
+        body {
+            background-color: #3652c0;
+        }
+
+        .loginBtn {
+            background-color: #6fb7d4;
+        }
+
+        .imgContainer {
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+
+        .gameSelect1 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(235, 88, 88));
+        }
+
+        .gameSelect2 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(201, 35, 252));
+        }
+
+        .gameSelect3 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 201, 54));
+        }
+
+        .gameSelect4 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(172, 168, 168));
+
+        }
+
+        .gameSelect5 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(114, 231, 247));
+        }
+
+        .gameSelect1:hover {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(248, 67, 67));
+        }
+
+        .gameSelect2:hover {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(170, 13, 218));
+        }
+
+        .gameSelect3:hover {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(252, 189, 16));
+        }
+
+        .gameSelect4:hover {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(121, 118, 118));
+        }
+
+        .gameSelect5:hover {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(28, 206, 230));
+        }
+
+
+        .gameSelectorContainer {
+            height: 400px;
+        }
+
+        .srotByCLass {
+            font-size: 40px;
+            color: azure;
+            top: 645px;
+            left: 200px;
+        }
+    </style>
+    <title>Carbon</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <form method="post" action="./GoBackToHome">
+                <button class="navbar-brand" type="submit"
+                    style=" background-color: transparent;border-color: transparent;">
+                    <i class="d-inline-block align-text-top fa-solid fa-gamepad"
+                        style="color: #6fb7d4; font-size:1.5em;">CARBON</i>
+                </button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GAME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">MARKET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EVENT</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DISCUSSIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link loginBtn" href="http://localhost:8080/group5/html/MemberLogin.html">LOG
+                            IN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-light">
+                    <h2>精選遊戲</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="imgContainer col pb-2 h-auto">
+                    <ul id="imageGallery">
+                        <li class="py-3">
+                            <a href="#" class="d-flex justify-content-center">
+                                <img class="w-75" src="http://localhost:8080/group5/img/homegame1.jpg" /></a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="d-flex justify-content-center">
+                                <img class="w-75" src="http://localhost:8080/group5/img/homegame2.jpg" /></a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="d-flex justify-content-center">
+                                <img class="w-75" src="http://localhost:8080/group5/img/homegame3.jpg" /></a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="d-flex justify-content-center">
+                                <img class="w-75" src="http://localhost:8080/group5/img/homegame4.jpg" /></a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="d-flex justify-content-center">
+                                <img class="w-75" src="http://localhost:8080/group5/img/homegame5.jpg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-light">
+                    <h2 class="display-6">依類別瀏覽</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="gameSelectorContainer">
+                    <ul id="gameclass">
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass2.jpg" alt="">
+                                <div class="gameselect gameSelect2 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">冒險
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass3.jpg" alt="">
+                                <div class="gameselect gameSelect3 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">博弈
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass4.jpg" alt="">
+                                <div class="gameselect gameSelect4 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">益智
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass5.jpg" alt="">
+                                <div class="gameselect gameSelect5 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">趣味
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass5.jpg" alt="">
+                                <div class="gameselect gameSelect5 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">經典
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative d-block h-auto">
+                                <img class="img-fluid" src="http://localhost:8080/group5/img/gameclass5.jpg" alt="">
+                                <div class="gameselect gameSelect5 position-absolute top-0 h-100 w-100"></div>
+                                <div class="text-light position-absolute bottom-0 start-50 translate-middle-x fs-4">趣味
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-light h2">
+                    <h3 class="">CARBON</h3>
+                </div>
+                <div class="col-6 col-md text-light">
+                    <h5>STORE</h5>
+                    <ul class="list-unstyled">
+                        <li>HOME</li>
+                        <li>GAME</li>
+                        <li>BONUS SHOP</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md text-light">
+                    <h5>COMMUNITY</h5>
+                    <ul class="list-unstyled">
+                        <li>MARKET</li>
+                        <li>BONUS SHOP</li>
+                        <li>BONUS SHOP</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md text-light">
+                    <h5>CONNECT</h5>
+                    <ul class="list-unstyled">
+                        <li>Q&A</li>
+                        <li>SUPPORT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        $("#imageGallery").lightSlider({
+            // 參數設定[註1]
+            slideWidth: 600, // 物件寬度
+            speed: 400, // 切換速度
+            pause: 2000, // 當等待時間超過此時，則自動切換
+            auto: true, // 自動切換
+            item: 1, // 顯示數量
+            loop: true,
+            responsive: [
+                {
+                    breakpoint: 960, // 當螢幕大於此寬度時，則啟用此設定值
+                    settings: {
+                        item: 1, // 顯示數量
+                        slideMove: 1 // 一次切換數量
+                    }
+                },
+                {
+                    breakpoint: 640, // 當螢幕大於此寬度時，則啟用此設定值
+                    settings: {
+                        item: 1, // 顯示張數
+                        slideMove: 1 // 一次切換數量
+                    }
+                }
+            ]
+
+        });
+
+        $("#gameclass").lightSlider({
+            // 參數設定[註1]
+            // slideWidth: 600, // 物件寬度
+            speed: 400, // 切換速度
+            pause: 2000, // 當等待時間超過此時，則自動切換
+            auto: false, // 自動切換
+            item: 5, // 顯示數量
+            responsive: [
+                {
+                    breakpoint: 960, // 當螢幕大於此寬度時，則啟用此設定值
+                    settings: {
+                        item: 3, // 顯示數量
+                        slideMove: 1 // 一次切換數量
+                    }
+                },
+                {
+                    breakpoint: 640, // 當螢幕大於此寬度時，則啟用此設定值
+                    settings: {
+                        item: 2, // 顯示張數
+                        slideMove: 1 // 一次切換數量
+                    }
+                }
+            ]
+
+        });
+
+    </script>
+</body>
+
+
+
+</html>
